@@ -1,0 +1,355 @@
+<!Doctype Html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking...!</title>
+    <style>
+        body
+        {
+            background-image: url(https://m.economictimes.com/thumb/msid-55632219,width-1200,height-900,resizemode-4,imgsize-50312/can-booking-air-tickets-very-early-really-save-you-money-find-out.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #header
+        {
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            color:#002df7;
+            background-color:#0cfa5b4d;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:90px;
+            text-shadow: 10px 5px 15px red;
+            border-radius: 8px;
+
+        }
+        ul
+        {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        background-color:#5E454B;
+        opacity: 0.8;
+        overflow:hidden;
+        border-radius: 8px;
+        }
+        li
+        {
+        float: right;
+        border-left:2px solid black;
+        }
+       .link
+        {
+        display:block;
+        color:rgb(217, 255, 0);
+        text-align:center;
+        padding:20px;
+        font-size: 30px;
+        text-shadow: 5px 5px 5px 5px greenyellow;
+        text-decoration: none;
+        }
+        a:hover
+        {
+            background-color: darkgreen;
+            text-shadow: 15px;
+            color:orchid;
+        }
+        form
+        {
+            margin-left: 35px;
+            border: 8px;
+            border-color: black;
+            border-radius: 100px;
+            border-style: none;
+            width: 1275px;
+            height: 780px;
+            background-color:#3535359a;
+            opacity: 0.9;
+        }
+        label
+        {
+            text-align: right;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+            color: rgb(238, 215, 10);
+            display: inline-block;
+            width: 225px;
+        }
+        #from
+        {
+            border: 2px;
+            border-radius: 8px;
+            width: 300px;
+            height: 35px;
+            background-color: rgba(249, 250, 250, 0.973);
+            color:#000000;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #To,#customer,#customer1
+        {
+            border: 2px;
+            border-radius: 8px;
+            width: 300px;
+            height: 35px;
+            background-color: rgb(241, 250, 249);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #Age
+        {
+            border: 2px;
+            border-radius: 8px;
+            width: 300px;
+            height: 35px;
+            background-color: rgb(241, 250, 249);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #dod,#dor
+        {
+            border: 2px;
+            border-radius: 8px;
+            width: 300px;
+            height: 35px;
+            background-color: rgb(241, 250, 249);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #mob,#mob1
+        {
+            border: 2px;
+            border-radius: 8px;
+            width: 300px;
+            height: 35px;
+            background-color: rgb(241, 250, 249);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #mail,#mail1
+        {
+            border: 2px;
+            border-radius: 8px;
+            width: 300px;
+            height: 35px;
+            border-style: none;
+            background-color: rgb(241, 250, 249);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #customer1:hover,#mail1:hover,#mail:hover,#mob:hover,#mob1:hover,#dod:hover,#dor:hover,#Age:hover,#To:hover,#customer:hover,#from:hover,.cclass:hover
+        {
+            opacity: 1;
+            box-shadow: 5px 5px 5px 0px red;
+        }
+         h1
+        {
+            font-size: 40px;
+            text-shadow: 5px 5px 5px red;
+            color:rgb(200, 255, 0);
+            font-style: italic;
+            margin-bottom:60px;
+
+        }
+        #submit
+        {
+            font-size: 30px;
+            border-radius: 10px;
+            background-color:white;
+            border-style: solid;
+            box-shadow: 5px 5px 5px 0px rgb(124, 121, 121);
+            font-weight: 10px;
+            text-align: center;
+        }
+        #submit:hover
+        {
+            color:red;
+            background-color: #330cdf;
+        }
+        #tac:hover
+        {
+            background-color:black;
+        }
+        #click
+        {
+            width: 25px;
+            height: 20px;
+            accent-color: red;
+        }
+        #tac
+        {
+            font-size: 23px;
+            text-decoration: none;
+            color: red;
+        }
+        .cclass
+        {
+            border: 2px;
+            border-radius: 8px;
+            width: 300px;
+            height: 35px;
+            border-style: none;
+            background-color: rgb(241, 250, 249);
+            font-size: 25px;
+            font-weight: unset;
+        }
+        .opt
+        {
+            font-size: 20px;
+        }
+        input
+        {
+            display: inline;
+            width: 150px;
+            font-size: 20px;
+            font-weight:unset;
+            color: #000000;
+        }
+        .fhead
+        {
+            animation: fhead 1s linear infinite;
+        }
+        @keyframes fhead {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        footer
+        {
+            text-align:left;
+            display: inline-block;
+            width: 100%;
+        }
+        .foot1
+        {
+            font-size: 15px;
+            background-color:#f1250a;
+            border-radius: 10px;
+            height: 100px;
+            display: inline-block;
+
+        }
+        .ft
+        {
+            text-align: left;
+            text-decoration: none;
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 45px;
+            margin-left:80px;
+            display: inline-block;
+        }
+        #lifoot
+        {
+            border-style: none;
+        }
+        #terms
+        {
+            display:inline;
+        }
+        .ft:hover
+        {
+            background-color:rgba(4, 221, 87, 0.719);
+            color:rgb(243, 237, 237);
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">Air Ticket Booking <br>Travel and Explore your Holidays</header>
+    <nav id="mynav">
+        <ul class="ulnavi">
+            <li class="navi" id="navi1">
+                <li><a href="http://127.0.0.1:8000/see%20you%20soon/" class="link"><b>Login</b></a></li>
+                <li><a href="http://127.0.0.1:8000/see%20you%20soon/" class="link"><b>Contents</b></a></li>
+                <li><a href="http://127.0.0.1:8000/see%20you%20soon/" class="link"><b>Places</b></a></li>
+                <li><a href="http://127.0.0.1:8000/see%20you%20soon/" class="link"> <b>Blog</b></a></li></li>
+                <li><a href="http://127.0.0.1:8000/AboutUs/" class="link"> <b>About</b></a></li>
+                <li><a href="http://127.0.0.1:8000/home/" class="link"><b>Home</b></a></li>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <form id=form_2 action="#" method="POST">
+       {% csrf_token %}
+       <center><h1 class="fhead">
+        <br>Book Your Tickets......!</h1></center>
+        <label for="from" name="from_1">From:</label>
+        <input type="text" id="from"  name="from_1" placeholder="Enter your Orgin">
+        <label for="To" name="to" >To:</label>
+        <input type="text" id="To"  name="to" placeholder="Where you Want to go"><br>
+        <br>
+        <br>
+        <label for="options" name="value">Cabin Crew:</label><select class="cclass"  name="value1"id="options">
+            <option class="opt" name="value1" selected>Select</option>
+            <option class="opt" name="value1">Economy</option>
+            <option class="opt" name="value1">Premium&nbsp;Economy</option>
+            <option class="opt" name="value1">Firstclass</option>
+            <option class="opt" name="value1">Buisness&nbsp;Class</option>
+        </select><br>
+         <br>
+         <br>
+        <label for="customer" name="fname">First Name:</label>
+        <input type="text" id="customer" name="fname"placeholder="First Name">
+        <label for="customer1" name="lname">Last Name:</label>
+        <input type="text" id="customer1" name="lname"placeholder="last Name">
+        <br>
+        <br>
+        <label for="Age" name="age">Age:</label>
+        <input type="age" id="Age" name="age" placeholder="Age" maxlength="2">
+        <label for="gen" name="gender">Gender:</label><select class="cclass"  name="gender"id="gen">
+            <option class="gen1" name="gender" selected>Male</option>
+            <option class="gen1" name="gender">Female</option>
+            <option class="gen1" name="gender">Others</option>
+        </select>
+        <br>
+        <br>
+        <label for="dod" name="depart">Departure Date:</label>
+        <input type="datetime-local" id="dod" name="depart" placeholder="date">
+        <label for="dor" name="return1">Return Date:</label>
+        <input type="datetime-local" id="dor" name="return1" placeholder="Return date"><br>
+        <br>
+        <br>
+        <label for="mob" name="mobile">Mobile No:</label>
+        <input type="tel" id="mob" name="mobile" placeholder="Mobile Number" maxlength="10">
+        <label for="mob1" name="mobile1"> Confirm Mobile:</label>
+        <input type="tel" id="mob1" name="mobile1" placeholder="Re-type Mobile Number" maxlength="10"><br>
+        <br>
+        <br>
+        <label for="mail" name="mail">Enter Your Mail Id:</label>
+        <input type="email" id="mail" name="mail" placeholder="Enter your mail id">
+        <label for="mail1" name="mail1">Confirm Mail Id:</label>
+        <input type="email" id="mail1" name="mail1" placeholder="Re-type mail id"><br>
+        <br>
+        <br>
+        <center><input type="checkbox" name="click" id="click"><label for="click" id="terms"><a href="default.asp" id="tac"><b>I Agree to the Terms And Conditions...!</b></a></label></center>
+        <br>
+        <br>
+        <center><input type="submit" id="submit"  value="Submit&nbsp;"></center>
+    </form>
+    <br>
+    <footer id="footer" class="footer11">
+        <ul class="foot1">
+            <li class="foot" id="lifoot">
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft">About&nbsp;Airlines</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft">Forms&nbsp;and&nbsp;Downloads</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft" style="margin-left:35px;">Conditions&nbsp;of&nbsp;Carriage</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft" style="margin-left:10px;">Terms&nbsp;and&nbsp;Conditions</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft">Media&nbsp;Center</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft">Contact&nbsp;Details</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft">Citizen&nbsp;Charter</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft">Copyrights</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft">Refund&nbsp;Policy</a>
+                <a href="http://127.0.0.1:8000/see%20you%20soon/" class="ft"style="margin-left:120px;">News&nbsp;of&nbsp;Upcoming&nbsp;Flights.</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
